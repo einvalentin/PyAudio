@@ -76,6 +76,7 @@ else:
 
 if sys.platform == 'darwin':
     defines += [('MACOSX', '1')]
+    include_dirs.append('/opt/local/include')
 
     if mac_sysroot_path:
         extra_compile_args += ["-isysroot", mac_sysroot_path]
